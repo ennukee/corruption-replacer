@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/corruption-replacer/static/css/main.5f361e03.chunk.css",
+    "main.js": "/corruption-replacer/static/js/main.55a844da.chunk.js",
+    "main.js.map": "/corruption-replacer/static/js/main.55a844da.chunk.js.map",
+    "runtime-main.js": "/corruption-replacer/static/js/runtime-main.7bbd1b58.js",
+    "runtime-main.js.map": "/corruption-replacer/static/js/runtime-main.7bbd1b58.js.map",
+    "static/js/2.7dc7db7e.chunk.js": "/corruption-replacer/static/js/2.7dc7db7e.chunk.js",
+    "static/js/2.7dc7db7e.chunk.js.map": "/corruption-replacer/static/js/2.7dc7db7e.chunk.js.map",
+    "index.html": "/corruption-replacer/index.html",
+    "precache-manifest.72f3d827903b585a3d53646e288272de.js": "/corruption-replacer/precache-manifest.72f3d827903b585a3d53646e288272de.js",
+    "service-worker.js": "/corruption-replacer/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/corruption-replacer/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.7dc7db7e.chunk.js.LICENSE.txt": "/corruption-replacer/static/js/2.7dc7db7e.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/corruption-replacer/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7bbd1b58.js",
+    "static/js/2.7dc7db7e.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.55a844da.chunk.js"
+  ]
+}
