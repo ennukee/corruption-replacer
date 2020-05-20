@@ -27,12 +27,10 @@ function App() {
         <div id="description">
           <div className="main-body">
             Paste your /simc input into the box below, then click on the corruptions
-            below that represent any corruption you want to get a copy of on your active gear.
+            below that represent any corruption you want to get a copy of on your equipped gear
+            (ignores unequipped gear)
           </div>
-          <div className="main-body">
-            This will ignore all non-equipped gear to prevent absurdly large outputs. Equip the pieces you would ideally corrupt before inputting. 
-          </div>
-          <div id="credits">This may have bugs, it was made in about 2 hours. Hit up Chickenism on US-Icecrown ingame or enragednuke#0001 on Discord with any issues.</div>
+          <div id="credits">This may have bugs, it was made in about 2 hours. Hit up Chickenism on US-Icecrown ingame or enragednuke#0001 on Discord with any issues. Direct any corruption-specific questions to your class discord.</div>
         </div>
         <div id="input-area">
           <textarea rows="8" onChange={(e) => setInput(e.target.value)} value={input}/>
