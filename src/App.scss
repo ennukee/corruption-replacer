@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 150vh;
+  background-image: url('https://bnetcmsus-a.akamaihd.net/cms/blog_header/79/7968XSLYSU1B1578334215792.jpg');
+  background-size: cover;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #cfcccc;
+
+  #title {
+    padding-top: 25px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  #description {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    * {
+      padding: 0 10%;
+      margin-top: 10px;
+    }
+
+    #credits {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+
+  * {
+    transition: all 0.16s ease;
+    -webkit-transition: all 0.16s ease;
+    -moz-transition: all 0.16s ease;
+    -ms-transition: all 0.16s ease;
+    -o-transition: all 0.16s ease;
+}
+
+  #inner-body {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #input-area {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      &.flair {
+        background-color: #ccfccc;
+        &:hover {
+          background-color: #bbfbbb;
+        }
+      }
+
+      margin-top: -4px;
+      border: 2px solid #cfcccc;
+      background-color: #cfcccc;
+      border-radius: 0 0 3px 3px;
+      font-size: 18px;
+      padding: 5px 0;
+      -webkit-border-radius: 0 0 3px 3px;
+      -moz-border-radius: 0 0 3px 3px;
+      -ms-border-radius: 0 0 3px 3px;
+      -o-border-radius: 0 0 3px 3px;
+
+      &:hover {
+        background-color: #bfbbbb;
+        cursor: pointer;
+      }
+    }
+  }
+
+  textarea {
+    border-radius: 5px;
+    border: 2px solid #cfcccc;
+    background-color: #222222;
+    color: #cfcccc;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  #corruption-selector {
+    margin-top: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px 120px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px ;
+    div {
+      margin: 2px;
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &.active {
+        background-color: #cfcccc;
+        color: #222222;
+        border: 1px solid #222222;
+      }
+      &.inactive {
+        background-color: #222222;
+        color: #cfcccc;
+        border: 1px solid #cfcccc;
+      }
+      border-radius: 3px  ;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+  }
+}
