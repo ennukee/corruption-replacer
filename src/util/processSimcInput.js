@@ -1,7 +1,6 @@
 import { corruptionIds, corruptionData } from './corruptionIds'
 
 export default (input, toggledCorruptions) => {
-    console.log(corruptionData)
     const lines = input.split('\n')
     const bagGearIndex = lines.findIndex(line => line.startsWith('###'))
     const mainGear = lines.slice(0, bagGearIndex)
