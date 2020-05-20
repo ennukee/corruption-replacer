@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "18ddb61afea563ce71f1b044705c9bc7",
+    "revision": "70df0e9385287989ba2e6a2dd244a9b7",
     "url": "/corruption-replacer/index.html"
   },
   {
-    "revision": "a789fc67e75cf2d998e5",
+    "revision": "6e81c671189c109e2da4",
     "url": "/corruption-replacer/static/css/main.8a840874.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/corruption-replacer/static/js/2.620e225c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a789fc67e75cf2d998e5",
-    "url": "/corruption-replacer/static/js/main.bdbdde66.chunk.js"
+    "revision": "6e81c671189c109e2da4",
+    "url": "/corruption-replacer/static/js/main.d3787322.chunk.js"
   },
   {
     "revision": "7d4447cf3771e6a80e85",

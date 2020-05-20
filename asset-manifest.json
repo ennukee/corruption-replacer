@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/corruption-replacer/static/css/main.8a840874.chunk.css",
-    "main.js": "/corruption-replacer/static/js/main.bdbdde66.chunk.js",
-    "main.js.map": "/corruption-replacer/static/js/main.bdbdde66.chunk.js.map",
+    "main.js": "/corruption-replacer/static/js/main.d3787322.chunk.js",
+    "main.js.map": "/corruption-replacer/static/js/main.d3787322.chunk.js.map",
     "runtime-main.js": "/corruption-replacer/static/js/runtime-main.7bbd1b58.js",
     "runtime-main.js.map": "/corruption-replacer/static/js/runtime-main.7bbd1b58.js.map",
     "static/js/2.620e225c.chunk.js": "/corruption-replacer/static/js/2.620e225c.chunk.js",
     "static/js/2.620e225c.chunk.js.map": "/corruption-replacer/static/js/2.620e225c.chunk.js.map",
     "index.html": "/corruption-replacer/index.html",
-    "precache-manifest.73200095a8b5dde028a38db5a5f7aea3.js": "/corruption-replacer/precache-manifest.73200095a8b5dde028a38db5a5f7aea3.js",
+    "precache-manifest.6983e427f1d9685fb5f3e23a4890abb4.js": "/corruption-replacer/precache-manifest.6983e427f1d9685fb5f3e23a4890abb4.js",
     "service-worker.js": "/corruption-replacer/service-worker.js",
     "static/css/main.8a840874.chunk.css.map": "/corruption-replacer/static/css/main.8a840874.chunk.css.map",
     "static/js/2.620e225c.chunk.js.LICENSE.txt": "/corruption-replacer/static/js/2.620e225c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7bbd1b58.js",
     "static/js/2.620e225c.chunk.js",
     "static/css/main.8a840874.chunk.css",
-    "static/js/main.bdbdde66.chunk.js"
+    "static/js/main.d3787322.chunk.js"
   ]
 }
