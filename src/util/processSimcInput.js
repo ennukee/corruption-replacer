@@ -1,6 +1,6 @@
 import { corruptionIds, corruptionData } from './corruptionIds'
 
-export default (input, toggledCorruptions) => {
+export default (input, toggledCorruptions, options) => {
     const lines = input.split('\n')
     const bagGearIndex = lines.findIndex(line => line.startsWith('###'))
     const mainGear = lines.slice(0, bagGearIndex)
@@ -25,7 +25,7 @@ export default (input, toggledCorruptions) => {
     })
     const allExtraPieces = []
     const cleansedLines = corruptableSlotLines.map(line => {
-        return corruptionIds.reduce((acc, id) => acc.replace(id, ''), line).replace('/,', ',').replace('//', '/')
+        return [...(options.overrideSockets ? ['4802'] : []), ...corruptionIds].reduce((acc, id) => acc.replace(id, ''), line).replace('/,', ',').replace('//', '/')
     })
     allExtraPieces.push(...cleansedLines)
 
@@ -38,6 +38,17 @@ export default (input, toggledCorruptions) => {
         const corruptedLines = cleansedLines.map(line => line.replace('bonus_id=', `bonus_id=${id}/`))
         allExtraPieces.push(...corruptedLines)
     })
+    let piecesPostFilter = allExtraPieces
+    if (options.overrideSockets) {
+        piecesPostFilter = piecesPostFilter.map(line =>
+            line.replace('bonus_id=', 'bonus_id=4802/')
+        )
+    }
+    if (options.ilvl475) {
+        piecesPostFilter = piecesPostFilter.map(line =>
+            line += ',ilevel=475'    
+        )
+    }
 
-    return `${mainGear.join('\n')}\n### GEAR FROM CLONER\n${allExtraPieces.map(line => `# ${line}`).join('\n')}`
+    return `${mainGear.join('\n')}\n### GEAR FROM CLONER\n${piecesPostFilter.map(line => `# ${line}`).join('\n')}`
 }
