@@ -89,7 +89,7 @@
   }
 
   #corruption-selector {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: left;
     display: grid;
     grid-template-columns: 120px 120px 120px 120px 120px 120px 120px;
@@ -122,4 +122,38 @@
       -o-border-radius: 3px;
     }
   }
+}
+
+#options {
+  margin-top: 20px;
+  display: flex;
+}
+
+.additional-option {
+  margin: 2px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &.active {
+    background-color: #cfcccc;
+    color: #222222;
+    border: 1px solid #222222;
+  }
+  &.inactive {
+    background-color: #222222;
+    color: #cfcccc;
+    border: 1px solid #cfcccc;
+  }
+  border-radius: 3px  ;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
