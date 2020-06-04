@@ -1,12 +1,13 @@
-import React, { useState, useReducer } from 'react';
+import React, { useState, useRef, useReducer } from 'react';
 import processSimcInput from './util/processSimcInput';
 import { corruptionData } from './util/corruptionIds'
 import Changelog from './components/Changelog'
 import './App.scss';
 
 function App() {
-  const [ input, setInput ] = useState('# Paste your /simc input here');
+  const [ input, setInput ] = useState('# Paste your /simc input here')
   const [ buttonFlair, setButtonFlair ] = useState(false)
+  const inputRef = useRef()
 
   // Additional option reducer
   const [ options, setOption ] = useReducer((state, action) => {
@@ -30,6 +31,10 @@ function App() {
   const submitInput = () => {
     const output = processSimcInput(input, activeCorruptions, options)
     setInput(output)
+    setTimeout(() => {
+      inputRef.current.select()
+      document.execCommand('copy')
+    }, 20)
     setButtonFlair(true)
     setTimeout(() => setButtonFlair(false), 2500)
   }
@@ -43,16 +48,17 @@ function App() {
       <Changelog />
       <div id="inner-body">
         <div id="title">Corruption Mass Cloner</div>
+        <div id="subtitle">version 1.2.0 (last updated 6/4/2020)</div>
         <div id="description">
           <div className="main-body">
             Paste your /simc input into the box below, then click on the corruptions
             below that represent any corruption you want to get a copy of on your equipped gear
-            (ignores unequipped gear)
+            (default ignores unequipped)
           </div>
           <div id="credits">This likely has bugs. Hit up enragednuke#0001 on Discord with any issues. Direct any corruption-specific questions to your class discord.</div>
         </div>
         <div id="input-area">
-          <textarea rows="8" onChange={(e) => setInput(e.target.value)} value={input}/>
+          <textarea ref={inputRef} rows="8" onChange={(e) => setInput(e.target.value)} value={input}/>
           <button
             className={buttonFlair ? 'flair' : ''}
             onClick={submitInput}
@@ -74,6 +80,13 @@ function App() {
             onClick={() => setOption({ type: 'BOOLEAN', param: 'ilvl475' })}
           >
             Set item levels to 475
+          </div>
+          <div
+            id="bags"
+            className={`additional-option ${options.bags ? 'active' : 'inactive'}`}
+            onClick={() => setOption({ type: 'BOOLEAN', param: 'bags' })}
+          >
+            Clone in-bags gear too
           </div>
         </div>
         <div id="corruption-selector">
