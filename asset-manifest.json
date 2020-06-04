@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/corruption-replacer/static/css/main.ed6978fa.chunk.css",
-    "main.js": "/corruption-replacer/static/js/main.d4b865ed.chunk.js",
-    "main.js.map": "/corruption-replacer/static/js/main.d4b865ed.chunk.js.map",
+    "main.css": "/corruption-replacer/static/css/main.9d0401d8.chunk.css",
+    "main.js": "/corruption-replacer/static/js/main.15cacf6a.chunk.js",
+    "main.js.map": "/corruption-replacer/static/js/main.15cacf6a.chunk.js.map",
     "runtime-main.js": "/corruption-replacer/static/js/runtime-main.7bbd1b58.js",
     "runtime-main.js.map": "/corruption-replacer/static/js/runtime-main.7bbd1b58.js.map",
     "static/js/2.0cac6c77.chunk.js": "/corruption-replacer/static/js/2.0cac6c77.chunk.js",
     "static/js/2.0cac6c77.chunk.js.map": "/corruption-replacer/static/js/2.0cac6c77.chunk.js.map",
     "index.html": "/corruption-replacer/index.html",
-    "precache-manifest.a1cc4fbe68a31a347290d6d30937061d.js": "/corruption-replacer/precache-manifest.a1cc4fbe68a31a347290d6d30937061d.js",
+    "precache-manifest.5751e7aac341cd45505cf0ac5bf92423.js": "/corruption-replacer/precache-manifest.5751e7aac341cd45505cf0ac5bf92423.js",
     "service-worker.js": "/corruption-replacer/service-worker.js",
-    "static/css/main.ed6978fa.chunk.css.map": "/corruption-replacer/static/css/main.ed6978fa.chunk.css.map",
+    "static/css/main.9d0401d8.chunk.css.map": "/corruption-replacer/static/css/main.9d0401d8.chunk.css.map",
     "static/js/2.0cac6c77.chunk.js.LICENSE.txt": "/corruption-replacer/static/js/2.0cac6c77.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7bbd1b58.js",
     "static/js/2.0cac6c77.chunk.js",
-    "static/css/main.ed6978fa.chunk.css",
-    "static/js/main.d4b865ed.chunk.js"
+    "static/css/main.9d0401d8.chunk.css",
+    "static/js/main.15cacf6a.chunk.js"
   ]
 }
