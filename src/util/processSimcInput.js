@@ -2,7 +2,7 @@ import { corruptionIds, corruptionData } from './corruptionIds'
 
 export default (input, toggledCorruptions, options) => {
     const lines = input.split('\n')
-    const bagGearIndex = lines.findIndex(line => line.startsWith('###'))
+    const bagGearIndex = options.bags ? lines.length : lines.findIndex(line => line.startsWith('###'))
     const mainGear = lines.slice(0, bagGearIndex)
     const corruptableSlots = [
         'wrist',
@@ -20,6 +20,9 @@ export default (input, toggledCorruptions, options) => {
         corruptableSlots.forEach(slot => {
             if (line.startsWith(slot)) {
                 corruptableSlotLines.push(line)
+            }
+            if (options.bags && line.startsWith(`# ${slot}`)) {
+                corruptableSlotLines.push(line.slice(2))
             }
         })
     })
